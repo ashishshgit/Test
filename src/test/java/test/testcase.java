@@ -28,12 +28,14 @@ void Login()
 	
 	System.out.print(driver.getTitle());
 	driver.findElement(By.id("identifierId")).sendKeys("as@gmil.com");
+	driver.findElement(By.xpath("/html/body/div[1]/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div[2]/div/div[1]/div/div/button/div[2]")).click();;
 }
 
 @AfterTest
 void tearDown()
 
-{
+{   
+	
 	driver.close();
 }
 
